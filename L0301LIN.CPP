@@ -26,6 +26,45 @@ class LinkedList{
 			end = NULL;
 			size = 0;
 	}
+	int deleteNode(int key){
+
+		}
+
+
+
+	void freeList(){
+
+		while(start){
+
+			deleteNode(start->data);
+
+		}
+		size = 0;
+
+
+	}
+
+	int getSize(){
+
+		return size;
+
+	}
+
+
+
+void search(int key){
+                        	
+    Node *temp = start;
+			if(!start)
+				return NULL;
+
+			while(temp && temp->data!=key)
+				temp = temp->next;
+
+			return temp;
+
+
+}
 
 		Node *searchOnNode(int key){
 
